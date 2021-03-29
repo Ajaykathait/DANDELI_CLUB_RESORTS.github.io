@@ -26,10 +26,20 @@ body {
     flex-direction: row;
     width: 100vw;
     background: #ffd801;
-    padding: 0.3rem 3.5rem;
+    padding: 0.3rem 10vw;
     position: fixed;
+    height: 84px;
     top: 0;
     z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    .logo{
+        width: 230px;
+        img{
+            width: 100%;
+        }
+    }
+
     @media (max-width: 650px) {
         padding: 0.3rem 2rem;
     }
@@ -138,7 +148,7 @@ body {
 
             .text {
                 font-weight: 600;
-                font-size: 2.4rem;
+                font-size: 2.1rem;
                 line-height: 46px;
                 letter-spacing: 0.01em;
                 color: #fff;
@@ -281,9 +291,12 @@ body {
                     .number {
                         display: flex;
                         justify-self: center;
+                        width: 45%;
+                        max-width: 350px;
                         input {
-                            width: 230px;
-                            min-width: 230px;
+                            width: 100%;
+                            min-width: 180px;
+                            max-width: 350px;
                             outline: none;
                             border: none;
                             padding: 5px 0;

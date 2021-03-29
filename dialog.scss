@@ -1,0 +1,60 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #fff;
+}
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #111111;
+}
+
+.message_box{
+    height:fit-content;
+    width: 30vw;
+    min-width: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #ffd901e8;
+    background-color: rgba(17, 17, 17, 0.568);
+    .message_title{
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: #fff;
+        background-color: #ffd901e8;
+        padding: 10px 10%;
+    }
+    .message{
+        font-size: 1.15rem;
+        font-weight: 500;
+        color: #fff;
+        padding: 30px 10%;
+    }
+    .cancel_btn{
+        width: fit-content;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #fff;
+        padding: 10px 25px;
+        background-color: #ffd901c9;
+        display: flex;
+        margin: auto 10% auto auto;
+        margin-bottom: 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
