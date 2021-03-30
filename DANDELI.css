@@ -651,7 +651,7 @@ body {
   background-color: #1111118c;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1150px) {
   .main-cont .imggg-chart .imggg .res1 .hover,
   .main-cont .imggg-chart .imggg .res2 .hover,
   .main-cont .imggg-chart .imggg .res3 .hover,
