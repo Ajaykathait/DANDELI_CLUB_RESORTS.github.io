@@ -1652,7 +1652,7 @@ body {
   cursor: pointer;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
   .main-cont .Creators-Apply .container {
     -webkit-transform: skew(0deg);
             transform: skew(0deg);
