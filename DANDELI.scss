@@ -33,9 +33,9 @@ body {
     z-index: 1000;
     justify-content: center;
     align-items: center;
-    .logo{
+    .logo {
         width: 230px;
-        img{
+        img {
             width: 100%;
         }
     }
@@ -390,6 +390,51 @@ body {
                     width: 85vw;
                     height: 55vw;
                 }
+                .I_button {
+                    position: absolute;
+                    top: 5%;
+                    right: 4%;
+                    width: 8%;
+                    z-index: 10;
+                    cursor: pointer;
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .hover {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: #fff;
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 15% 5% 10px 5%;
+
+                    background-color: #1111118c;
+                    @media (max-width: 1000px) {
+                        font-size: 1.2rem;
+                    }
+                    @media (max-width: 800px) {
+                        font-size: 1rem;
+                    }
+                    @media (max-width: 600px) {
+                        font-size: 1.3rem;
+                    }
+                    @media (max-width:400px) {
+                        font-size: 1rem;
+                    }
+                }
+                .hover {
+                    display: none;
+                }
+
                 .all_dot {
                     display: none;
                 }
@@ -405,7 +450,6 @@ body {
 
                     .book_now {
                         display: flex;
-                        margin: auto 3vw auto auto;
                         padding: 10px 20px;
                         background-color: #229a25;
                         width: fit-content;
@@ -490,6 +534,7 @@ body {
                 .img1 {
                     width: 100%;
                     height: 100%;
+                    cursor: pointer;
                     &::after {
                         content: "";
                         position: absolute;
@@ -691,6 +736,7 @@ body {
                 .img4 {
                     width: 100%;
                     height: 100%;
+                    cursor: pointer;
                     &::after {
                         content: "";
                         position: absolute;
@@ -1022,7 +1068,7 @@ body {
                     }
                 }
             }
-            .vid_chrt:first-child{
+            .vid_chrt:first-child {
                 border-top: 40px solid #ffd801;
             }
         }

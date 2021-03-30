@@ -599,6 +599,111 @@ body {
   }
 }
 
+.main-cont .imggg-chart .imggg .res1 .I_button,
+.main-cont .imggg-chart .imggg .res2 .I_button,
+.main-cont .imggg-chart .imggg .res3 .I_button,
+.main-cont .imggg-chart .imggg .res4 .I_button,
+.main-cont .imggg-chart .imggg .res5 .I_button,
+.main-cont .imggg-chart .imggg .res6 .I_button {
+  position: absolute;
+  top: 5%;
+  right: 4%;
+  width: 8%;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.main-cont .imggg-chart .imggg .res1 .I_button img,
+.main-cont .imggg-chart .imggg .res2 .I_button img,
+.main-cont .imggg-chart .imggg .res3 .I_button img,
+.main-cont .imggg-chart .imggg .res4 .I_button img,
+.main-cont .imggg-chart .imggg .res5 .I_button img,
+.main-cont .imggg-chart .imggg .res6 .I_button img {
+  width: 100%;
+}
+
+.main-cont .imggg-chart .imggg .res1 .hover,
+.main-cont .imggg-chart .imggg .res2 .hover,
+.main-cont .imggg-chart .imggg .res3 .hover,
+.main-cont .imggg-chart .imggg .res4 .hover,
+.main-cont .imggg-chart .imggg .res5 .hover,
+.main-cont .imggg-chart .imggg .res6 .hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15% 5% 10px 5%;
+  background-color: #1111118c;
+}
+
+@media (max-width: 1000px) {
+  .main-cont .imggg-chart .imggg .res1 .hover,
+  .main-cont .imggg-chart .imggg .res2 .hover,
+  .main-cont .imggg-chart .imggg .res3 .hover,
+  .main-cont .imggg-chart .imggg .res4 .hover,
+  .main-cont .imggg-chart .imggg .res5 .hover,
+  .main-cont .imggg-chart .imggg .res6 .hover {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .main-cont .imggg-chart .imggg .res1 .hover,
+  .main-cont .imggg-chart .imggg .res2 .hover,
+  .main-cont .imggg-chart .imggg .res3 .hover,
+  .main-cont .imggg-chart .imggg .res4 .hover,
+  .main-cont .imggg-chart .imggg .res5 .hover,
+  .main-cont .imggg-chart .imggg .res6 .hover {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-cont .imggg-chart .imggg .res1 .hover,
+  .main-cont .imggg-chart .imggg .res2 .hover,
+  .main-cont .imggg-chart .imggg .res3 .hover,
+  .main-cont .imggg-chart .imggg .res4 .hover,
+  .main-cont .imggg-chart .imggg .res5 .hover,
+  .main-cont .imggg-chart .imggg .res6 .hover {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-cont .imggg-chart .imggg .res1 .hover,
+  .main-cont .imggg-chart .imggg .res2 .hover,
+  .main-cont .imggg-chart .imggg .res3 .hover,
+  .main-cont .imggg-chart .imggg .res4 .hover,
+  .main-cont .imggg-chart .imggg .res5 .hover,
+  .main-cont .imggg-chart .imggg .res6 .hover {
+    font-size: 1rem;
+  }
+}
+
+.main-cont .imggg-chart .imggg .res1 .hover,
+.main-cont .imggg-chart .imggg .res2 .hover,
+.main-cont .imggg-chart .imggg .res3 .hover,
+.main-cont .imggg-chart .imggg .res4 .hover,
+.main-cont .imggg-chart .imggg .res5 .hover,
+.main-cont .imggg-chart .imggg .res6 .hover {
+  display: none;
+}
+
 .main-cont .imggg-chart .imggg .res1 .all_dot,
 .main-cont .imggg-chart .imggg .res2 .all_dot,
 .main-cont .imggg-chart .imggg .res3 .all_dot,
@@ -632,7 +737,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto 3vw auto auto;
   padding: 10px 20px;
   background-color: #229a25;
   width: -webkit-fit-content;
@@ -780,6 +884,7 @@ body {
 .main-cont .imggg-chart .imggg .res1 .img1 {
   width: 100%;
   height: 100%;
+  cursor: pointer;
 }
 
 .main-cont .imggg-chart .imggg .res1 .img1::after {
@@ -1029,6 +1134,7 @@ body {
 .main-cont .imggg-chart .imggg .res4 .img4 {
   width: 100%;
   height: 100%;
+  cursor: pointer;
 }
 
 .main-cont .imggg-chart .imggg .res4 .img4::after {
