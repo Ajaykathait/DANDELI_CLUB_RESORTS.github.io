@@ -400,9 +400,19 @@ body {
 
 @media (max-width: 500px) {
   .main-cont .full-page .left .input-boxes .in-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -415,6 +425,7 @@ body {
   .main-cont .full-page .left .input-boxes .in-row .name,
   .main-cont .full-page .left .input-boxes .in-row .subject {
     margin-right: 0;
+    width: 100%;
   }
 }
 
@@ -428,6 +439,15 @@ body {
   justify-self: center;
   width: 45%;
   max-width: 350px;
+}
+
+@media (max-width: 500px) {
+  .main-cont .full-page .left .input-boxes .in-row .name,
+  .main-cont .full-page .left .input-boxes .in-row .email,
+  .main-cont .full-page .left .input-boxes .in-row .subject,
+  .main-cont .full-page .left .input-boxes .in-row .number {
+    width: 100%;
+  }
 }
 
 .main-cont .full-page .left .input-boxes .in-row .name input,
