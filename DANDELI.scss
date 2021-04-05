@@ -1337,6 +1337,66 @@ body {
                 }
             }
         }
+
+
+        .more_imgs{
+            position: relative;
+            overflow: hidden;
+            max-height: 600px;
+            min-height: 600px;
+            width: 100vw;
+            max-width: 1300px;
+            margin-bottom: 3rem;
+            @media (max-width: 1000px) {
+                max-height: 500px;
+                min-height: 500px;
+
+            }
+            @media (max-width: 800px) {
+                max-height: 400px;
+                min-height: 400px;
+
+            }
+            .img0{
+                height: 100%;
+                width: 100%;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            .prev,
+            .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                transform: translateY(-50%);
+                padding: 16px;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+                background-color: rgba(0, 0, 0, 0.404);
+            }
+            .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+            .prev:hover,
+            .next:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+            .all_dot{
+                display: none;
+            }
+        }
+
+
+
         .chart {
             display: flex;
             flex-direction: column;
@@ -1378,15 +1438,18 @@ body {
                 .single-chart {
                     max-width: 25vw;
                     width: 25vw;
-                    min-width: 300px;
+                    min-width: 420px;
                     display: flex;
                     flex-direction: column;
-                    padding: 2.5rem 1.5rem;
+                    padding: 2rem 1.5rem;
                     background-color: #0000006b;
                     min-height: 700px;
                     height: fit-content;
                     margin-bottom: 2rem;
                     z-index: 23;
+                    @media (max-width: 500px) {
+                        min-width: 300px;
+                    }
                     .chart-heading {
                         font-weight: bold;
                         font-size: 1.7rem;
@@ -1396,6 +1459,11 @@ body {
                         margin-bottom: 1rem;
                         z-index: 20;
                         opacity: 1;
+                        @media (max-width: 500px) {
+                            font-size: 1.4rem;
+                        margin-bottom: 0.5rem;
+
+                        }
                     }
                     .tik-topic {
                         display: flex;
@@ -1413,6 +1481,9 @@ body {
                             cursor: pointer;
                             font-size: 1.2rem;
                             text-transform: uppercase;
+                            @media (max-width: 500px) {
+                                font-size: 1rem;   
+                            }
                         }
                         .topic:hover + .hover {
                             display: none;
@@ -1758,5 +1829,28 @@ body {
     }
     100% {
         transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+
+
+.Creators-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 230px;
+    background-color: #ffd801;
+    padding: 15px 10px;
+    border-radius: 50px;
+    margin: 2rem auto;
+    .Creators-text {
+        font-weight: 600;
+        font-size: 1.4rem;
+        line-height: 22px;
+        letter-spacing: 0.03em;
+        color: #111;
+        @media (max-width: 650px) {
+            font-size: 1.2rem;
+        }
     }
 }
