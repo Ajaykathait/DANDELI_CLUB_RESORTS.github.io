@@ -864,7 +864,20 @@ body {
   display: none;
 }
 
-.main-cont .off_offers {
+.main-cont .all_offers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  gap: 10px;
+}
+
+.main-cont .all_offers .off_offers {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -879,10 +892,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-color: #f44336;
-  padding: 3rem 1rem;
-  width: 70%;
-  min-width: 300px;
-  max-width: 700px;
+  padding: 2rem 1rem;
+  width: 15%;
+  max-width: 230px;
+  min-width: 230px;
+  max-height: 140px;
+  min-height: 140px;
   border-radius: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -891,20 +906,8 @@ body {
   overflow: hidden;
 }
 
-@media (max-width: 1000px) {
-  .main-cont .off_offers {
-    width: 80%;
-  }
-}
-
-@media (max-width: 700px) {
-  .main-cont .off_offers {
-    width: 95%;
-  }
-}
-
 @media (max-width: 500px) {
-  .main-cont .off_offers {
+  .main-cont .all_offers .off_offers {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -912,9 +915,9 @@ body {
   }
 }
 
-.main-cont .off_offers .single_off_offer {
+.main-cont .all_offers .off_offers .single_off_offer {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
   letter-spacing: 1px;
   margin: 10px 0;
@@ -923,24 +926,24 @@ body {
 }
 
 @media (max-width: 1000px) {
-  .main-cont .off_offers .single_off_offer {
+  .main-cont .all_offers .off_offers .single_off_offer {
     font-size: 1.3rem;
   }
 }
 
 @media (max-width: 700px) {
-  .main-cont .off_offers .single_off_offer {
+  .main-cont .all_offers .off_offers .single_off_offer {
     font-size: 1.1rem;
   }
 }
 
 @media (max-width: 500px) {
-  .main-cont .off_offers .single_off_offer {
+  .main-cont .all_offers .off_offers .single_off_offer {
     font-size: 1rem;
   }
 }
 
-.main-cont .off_offers .tNc {
+.main-cont .all_offers .off_offers .tNc {
   position: absolute;
   bottom: 10px;
   right: 10px;
@@ -948,7 +951,7 @@ body {
   font-size: 0.5rem;
 }
 
-.main-cont .off_offers .back-img {
+.main-cont .all_offers .off_offers .back-img {
   position: absolute;
   top: 0;
   bottom: 0;
