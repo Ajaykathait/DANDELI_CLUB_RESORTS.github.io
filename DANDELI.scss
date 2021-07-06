@@ -64,8 +64,8 @@ body {
         a {
             color: #fff;
             font-weight: 600;
-            font-size: 1.2rem;
-            letter-spacing: 1px;
+            font-size: 1rem;
+            letter-spacing: .5px;
             text-decoration: none;
         }
         border-radius: 5px;
@@ -145,16 +145,26 @@ body {
             display: flex;
             flex-direction: column;
             margin: auto 3vw 5% auto;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.363);
+            z-index: 10;
+            padding: 20px;
+            box-sizing: border-box;
+            box-shadow: 0 0 63px black;
 
             .text {
                 font-weight: 600;
-                font-size: 2.1rem;
+                font-size: 2.3rem;
                 line-height: 46px;
                 letter-spacing: 0.01em;
                 color: #fff;
                 z-index: 10;
                 display: flex;
                 margin-bottom: 1rem;
+                display: flex;
+                flex-direction: column;
             }
             .book_now {
                 display: flex;
@@ -163,8 +173,8 @@ body {
                 a {
                     color: #fff;
                     font-weight: 600;
-                    font-size: 1.3rem;
-                    letter-spacing: 1px;
+                    font-size: 1rem;
+                    letter-spacing: .5px;
                     text-decoration: none;
                 }
                 border-radius: 5px;
@@ -200,6 +210,7 @@ body {
             font-size: 1.2rem;
             line-height: 27px;
             margin-top: 15px;
+            font-family: system-ui;
             @media (max-width: 600px) {
                 font-size: 1rem;
             }
@@ -216,7 +227,7 @@ body {
     .full-page {
         display: flex;
         align-items: center;
-        width: 46%;
+        width: 35%;
         min-width: 300px;
         background-color: #ffd9011c;
         justify-content: center;
@@ -318,7 +329,7 @@ body {
                             background-color: transparent;
                             height: 35px;
                             border-bottom: 2px solid #e5e5e5;
-                            font-size: 1.2rem;
+                            font-size: 1rem;
                             color: #fff;
                             margin-top: 2rem;
                             ::placeholder {
@@ -341,7 +352,7 @@ body {
                             border: 2px solid #e5e5e5;
                             resize: vertical;
                             min-width: 250px;
-                            min-height: 100px;
+                            min-height: 150px;
                             color: #fff;
                             padding: 10px;
                             box-sizing: border-box;
@@ -382,7 +393,7 @@ body {
             border-radius: 10px;
             overflow: hidden;
             height: 260px;
-            width: 300px;
+            width: 88%;
             position: relative;
             img {
                 position: absolute;
@@ -664,16 +675,19 @@ body {
             margin-bottom: 4rem;
             padding: 5vw 3vw;
 
+
+            .res5{
+                margin: 0 auto 2rem 3vw;
+            }
+
             .res1,
             .res2,
             .res3,
             .res4,
             .res5,
-            .res6,
             .res7,
-            .res8,
-            .res9,
-            .res10 {
+            .res8
+             {
                 width: 40vw;
                 height: 25.5vw;
                 max-height: 450px;
@@ -697,10 +711,19 @@ body {
                         width: 100%;
                     }
                 }
+                .I-box{
+                    position: absolute;
+                    top: 0%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 70%;
+                    height: 70%;
+                    z-index: 10;
+                }
 
                 .hover {
                     position: absolute;
-                    top: 50%;
+                    top: 40%;
                     left: 50%;
                     transform: translate(-50%, -50%);
                     color: #fff;
@@ -745,6 +768,10 @@ body {
                     text-transform: uppercase;
                     z-index: 12;
 
+                    @media (max-width:1000px){
+                        font-size: .8rem;
+                    }
+
                     .book_now {
                         display: flex;
                         padding: 10px 20px;
@@ -752,20 +779,29 @@ body {
                         width: fit-content;
                         border-radius: 5px;
                         margin: 10px auto 10px 0;
+                        @media (max-width: 1000px) {
+                            padding: 4px 10px;
+
+                            a{
+                                font-size: .9rem;
+                                font-weight: 400;
+                            }
+                        }
+                        
                         a {
                             color: #fff;
                             font-weight: 600;
-                            font-size: 1.3rem;
-                            letter-spacing: 1px;
+                            font-size: 1rem;
+                            letter-spacing: .5px;
                             text-decoration: none;
                             padding: none;
                         }
                         cursor: pointer;
-                        @media (max-width: 650px) {
-                            font-size: 1.2rem;
-                            padding: 7px 15px;
-                            letter-spacing: 0.5px;
+                        @media (max-width: 600px) {
+                            font-size: .8rem;
+                            font-weight: 400;
                         }
+                        
                         &:hover {
                             animation: shake 0.5s;
                             animation-iteration-count: infinite;
@@ -773,10 +809,19 @@ body {
                     }
 
                     @media (max-width: 1000px) {
-                        font-size: 1.45rem;
+                        font-size: 1.1rem;
+                        padding: 10px 30px;
                     }
                     @media (max-width: 700px) {
-                        font-size: 1.25rem;
+                        font-size: .9rem;
+                    }
+                    @media (max-width: 600px) {
+                        font-size: 1.2rem;
+                        padding: 10px 10px;
+                    }
+                    @media (max-width: 400px) {
+                        font-size: .8rem;
+                        padding: 10px 18px;
                     }
                 }
 
@@ -1500,6 +1545,9 @@ body {
                     background-color: rgba(0, 0, 0, 0.8);
                 }
             }
+        }
+        .imggg:last-child{
+            margin: 0 auto 0 0;
         }
 
         .more_imgs {
